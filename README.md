@@ -14,4 +14,4 @@ Once the project is opened, you will have to run the following command, in order
 
 ## Visiting the project
 
-Also, I have deployed this project in Vercel. You can visit it with the following URL: [Camaleonic Dashboard App]()
+Also, I have deployed this project in Vercel. You can visit it with the following URL: [Camaleonic Dashboard App](https://camaleonic-fran-test.vercel.app/)
