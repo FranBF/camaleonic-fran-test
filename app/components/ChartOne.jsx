@@ -64,8 +64,6 @@ export default function ChartOne() {
           data: userTodos.map((ut) => ut.count),
         },
       ]}
-      width={600}
-      height={400}
     />
   );
 }
