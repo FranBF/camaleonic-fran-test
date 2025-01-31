@@ -1,12 +1,10 @@
 "use client";
 
-import Chart from "chart.js/auto";
-import { getRelativePosition } from "chart.js/helpers";
-import { BarChart } from "@mui/x-charts";
+import { PieChart, pieArcLabelClasses } from "@mui/x-charts/PieChart";
 import { useEffect, useState } from "react";
 
-export default function ChartOne() {
-  const [data, setData] = useState([]);
+export default function PieCharts() {
+  const [data2, setData2] = useState([]);
   const [keys, setKeys] = useState([]);
   const [userCount, setUserCount] = useState([]);
   const [userTodos, setUserTodos] = useState([]);
@@ -14,46 +12,38 @@ export default function ChartOne() {
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/todos")
       .then((response) => response.json())
-      .then((json) => setData(json));
+      .then((json) => setData2(json));
   }, []);
 
   useEffect(() => {
-    let sums = 0;
-    if (data.length !== 0) {
-      setKeys(Object.keys(data[0]));
-      data.map(
+    if (data2.length !== 0) {
+      setKeys(Object.keys(data2[0]));
+      data2.map(
         (dat) => !userCount.includes(dat.userId) && userCount.push(dat.userId)
       );
       setUserTodos(
         Object.entries(
-          data.reduce((acc, todo) => {
+          data2.reduce((acc, todo) => {
             acc[todo.userId] = (acc[todo.userId] || 0) + 1;
             return acc;
           }, {})
         ).map(([userId, count]) => ({
-          userId: Number(userId),
-          count: Number(count - Math.random(0, 9) * 10),
+          id: Number(userId),
+          value: count - Math.random(0, 9) * 10,
+          label: `User ${userId}`,
         }))
       );
     }
-  }, [data]);
-
+  }, [data2]);
   return (
-    <BarChart
-      xAxis={[
-        {
-          id: "barCategories",
-          data: userCount,
-          scaleType: "band",
-        },
-      ]}
+    <PieChart
       series={[
         {
-          data: userTodos.map((ut) => ut.count),
+          data: userTodos,
         },
       ]}
       width={600}
-      height={300}
+      height={200}
     />
   );
 }

@@ -1,11 +1,9 @@
 "use client";
 
-import Chart from "chart.js/auto";
-import { getRelativePosition } from "chart.js/helpers";
-import { BarChart } from "@mui/x-charts";
+import { LineChart } from "@mui/x-charts/LineChart";
 import { useEffect, useState } from "react";
 
-export default function ChartOne() {
+export default function ChartLine() {
   const [data, setData] = useState([]);
   const [keys, setKeys] = useState([]);
   const [userCount, setUserCount] = useState([]);
@@ -37,22 +35,15 @@ export default function ChartOne() {
       );
     }
   }, [data]);
-
   return (
-    <BarChart
-      xAxis={[
-        {
-          id: "barCategories",
-          data: userCount,
-          scaleType: "band",
-        },
-      ]}
+    <LineChart
+      xAxis={[{ data: userCount }]}
       series={[
         {
           data: userTodos.map((ut) => ut.count),
         },
       ]}
-      width={600}
+      width={500}
       height={300}
     />
   );
