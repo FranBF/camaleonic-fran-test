@@ -12,9 +12,16 @@ export default function AnimatedLogos() {
     "/xLogo.png",
   ];
   return (
-    <div className="flex flex-row gap-x-8 items-center justify-center">
+    <div className="flex flex-row gap-x-2 mt-[-20px] xl:mt-0 md:gap-x-8 items-center justify-center p-4">
       {logos.map((logo, index) => (
-        <Image src={logo} alt={`logo-${index}`} width={40} height={40}></Image>
+        <Image
+          src={logo}
+          alt={`logo-${index}`}
+          width={40}
+          height={40}
+          className="w-8 h-8 lg:w-12 lg:h-12"
+          key={index}
+        ></Image>
       ))}
     </div>
   );

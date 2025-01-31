@@ -42,8 +42,10 @@ export default function PieCharts() {
           data: userTodos,
         },
       ]}
-      width={600}
+      width={300}
       height={200}
+      slotProps={{ legend: { hidden: "true" } }}
+      margin={{ top: 10, bottom: 10, left: 10, right: 10 }}
     />
   );
 }

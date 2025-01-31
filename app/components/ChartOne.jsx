@@ -52,7 +52,7 @@ export default function ChartOne() {
           data: userTodos.map((ut) => ut.count),
         },
       ]}
-      width={600}
+      width={300}
       height={300}
     />
   );

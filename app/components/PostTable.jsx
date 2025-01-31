@@ -26,7 +26,7 @@ export default function PostTable() {
   }, [type]);
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-auto">
       <div className="flex items-center p-2 gap-x-4 justify-end">
         <TableFilter setType={setType}></TableFilter>
         {type === "posts" && <DialogPost></DialogPost>}

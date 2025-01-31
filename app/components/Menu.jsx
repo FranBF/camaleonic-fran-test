@@ -21,7 +21,7 @@ export default function Menu({ show, setShow }) {
     <div
       className={`fixed text-white top-0 right-0 h-screen w-full max-w-[250px] md:max-w-[300px] lg:max-w-[350px] 
         bg-gradient-to-b from-[#07b28e] to-[#0064bf] flex flex-col gap-y-4 px-6 
-        transform transition-transform duration-300 ease-in-out z-20
+        transform transition-transform duration-300 ease-in-out z-40
         ${
           show
             ? "translate-x-0 opacity-100 visible"

@@ -9,21 +9,27 @@ export default function Dashboard() {
     <main className="flex flex-col w-full h-full items-center justify-center gap-2 p-2">
       <div className="w-full h-1/2 flex flex-col md:flex-row gap-2 items-center justify-center">
         <div className="w-full md:w-1/2 h-[50vh] bg-[#2B2B2C] rounded-sm flex items-center justify-center flex-col">
-          <h2 className="mt-12 text-[30px]">How many todos has each user</h2>
+          <h2 className="mt-12 text-[20px] md:text-[30px]">
+            How many todos has each user
+          </h2>
           <ChartScatter></ChartScatter>
         </div>
         <div className="w-full md:w-1/2 h-[50vh] flex flex-col items-center justify-center bg-[#2B2B2C] rounded-sm">
-          <h2 className="mt-12 text-[30px]">How many todos has each user</h2>
+          <h2 className="mt-12 text-[20px] md:text-[30px]">
+            How many todos has each user
+          </h2>
           <ChartOne></ChartOne>
         </div>
       </div>
       <div className="w-full h-1/2 flex flex-col md:flex-row gap-2 items-center justify-center">
         <div className="w-full md:w-1/2 h-[50vh] flex flex-col items-center justify-center bg-[#2B2B2C] rounded-sm">
-          <h2 className="mt-12 text-[30px]">How many todos has each user</h2>
+          <h2 className="mt-12 text-[20px] md:text-[30px]">
+            How many todos has each user
+          </h2>
           <ChartLine></ChartLine>
         </div>
-        <div className="w-full md:w-1/2 h-[50vh] flex flex-col items-center justify-center bg-[#2B2B2C] rounded-sm">
-          <h2 className="mt-12 text-[30px]">
+        <div className="w-full md:w-1/2 h-[50vh] text-center flex flex-col items-center justify-center bg-[#2B2B2C] rounded-sm">
+          <h2 className="mt-12 text-[20px] md:text-[30px]">
             How many todos has each user {`(Pie Chart)`}
           </h2>
           <PieCharts></PieCharts>

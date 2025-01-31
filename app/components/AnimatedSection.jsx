@@ -47,20 +47,24 @@ export default function AnimatedSection() {
 
   return (
     <div
-      className={`w-11/12 md:w-3/4 self-center h-auto md:h-[32vh] rounded-lg flex flex-col  items-center justify-items-center justify-between ${data[index].color}`}
+      className={`w-11/12 xl:w-3/4 self-center h-auto py-8  rounded-lg flex flex-col  items-center justify-items-center justify-between ${data[index].color}`}
     >
       <div
-        className={`w-11/12 md:w-3/4 self-center h-[60vh] md:h-[32vh] rounded-lg flex flex-col md:flex-row items-center justify-items-center justify-between ${data[index].color}`}
+        className={`w-11/12 xl:w-3/4 self-center h-auto  rounded-lg gap-y-20 flex flex-col xl:flex-row items-center justify-items-center justify-between ${data[index].color}`}
       >
-        <div className="flex flex-col w-full text-center md:text-start md:w-1/2 h-full p-8 gap-y-4 items-center md:items-start justify-center">
-          <h1 className={`${data[index].letterColor} text-[40px] font-bold`}>
+        <div className="flex flex-col w-full text-center xl:text-start xl:w-1/2 h-full p-8 gap-y-4 items-center xl:items-start justify-center">
+          <h1
+            className={`${data[index].letterColor} text-[25px] xl:text-[30px] font-bold`}
+          >
             {data[index].title}
           </h1>
-          <p className={`${data[index].letterColor} text-[25px]`}>
+          <p
+            className={`${data[index].letterColor} text-[15px] xl:text-[25px]`}
+          >
             {data[index].text}
           </p>
         </div>
-        <div className="w-full md:w-1/2 flex items-center justify-center h-full p-4 md:p-0 mt-[-120px] md:mt-0">
+        <div className="w-full xl:w-1/2 flex items-center justify-center h-full p-4 xl:p-0 mt-[-120px] xl:mt-0">
           <Image
             src={data[index].img}
             alt="Imaged displayed"

@@ -40,7 +40,7 @@ export default function ChartScatter() {
 
   return (
     <ScatterChart
-      width={600}
+      width={300}
       height={300}
       series={[
         {
@@ -52,6 +52,7 @@ export default function ChartScatter() {
           data: userTodos.map((v) => ({ x: v.x2, y: v.y2, id: v.id })),
         },
       ]}
+      slotProps={{ legend: { hidden: "true" } }}
     />
   );
 }

@@ -43,7 +43,7 @@ export default function ChartLine() {
           data: userTodos.map((ut) => ut.count),
         },
       ]}
-      width={500}
+      width={300}
       height={300}
     />
   );
