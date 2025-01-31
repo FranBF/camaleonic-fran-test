@@ -15,3 +15,9 @@ Once the project is opened, you will have to run the following command, in order
 ## Visiting the project
 
 Also, I have deployed this project in Vercel. You can visit it with the following URL: [Camaleonic Dashboard App](https://camaleonic-fran-test.vercel.app/)
+
+## Colors
+
+All of the colors have been selected focusing on the [Camaleonic Page](https://camaleonicanalytics.com/)
+
+The data from the charts have been selected by JSONPlaceholder API and adding a touch of randomness. Tables data is from the same API.
