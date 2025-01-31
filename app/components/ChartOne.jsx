@@ -32,7 +32,7 @@ export default function ChartOne() {
           }, {})
         ).map(([userId, count]) => ({
           userId: Number(userId),
-          count: Number(count - Math.random(0, 9) * 10),
+          count: Math.round(count - Math.random(0, 15) * 10),
         }))
       );
     }

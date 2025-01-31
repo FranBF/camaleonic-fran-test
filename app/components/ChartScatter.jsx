@@ -43,14 +43,6 @@ export default function ChartScatter() {
       width={600}
       height={300}
       series={[
-        /* {
-          label: "Series A",
-          data: userTodos.map((ut) => ut.count),
-        },
-        {
-          label: "Series B",
-          data: userTodos.map((ut) => ut.count),
-        }, */
         {
           label: "How many todos per user",
           data: userTodos.map((v) => ({ x: v.x1, y: v.y1, id: v.id })),
