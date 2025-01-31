@@ -8,11 +8,11 @@ export default function Home() {
     <div className="flex flex-col items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-y-4 p-4 row-start-2 items-center justify-center  w-full h-full">
         <AnimatedSection></AnimatedSection>
-        <div className="w-11/12 xl:w-3/4 self-center h-auto xl:h-[15vh] mt-12 p-12 rounded-lg bg-[#04AEB7] gap-y-8 text-center flex flex-col xl:flex-row items-center justify-between">
-          <h2 className="w-full xl:w-1/3 font-bold text-white text-[25px] xl:text-[30px] text-start">
+        <div className="w-11/12 xl:w-3/4 self-center h-auto mt-12 p-12 rounded-lg bg-[#04AEB7] gap-y-8 text-center flex flex-col xl:flex-row items-center justify-between">
+          <h2 className="w-full xl:w-1/3 font-bold text-white text-[25px] xl:text-[30px] xl:text-start">
             The best Dashboard
           </h2>
-          <div className="w-full xl:w-1/3 flex flex-col text-start justify-center text-white">
+          <div className="w-full xl:w-1/3 flex flex-col xl:text-start justify-center text-white">
             <p>What will you see?</p>
             <p>✅ Wonderful dashboard</p>
             <p>✅ All of your data organized</p>
@@ -23,7 +23,7 @@ export default function Home() {
             <ButtonLink route="/dashboard" title="Go to Dashboard"></ButtonLink>
           </div>
         </div>
-        <div className="w-11/12 xl:w-3/4 self-center h-auto gap-y-8 xl:h-[15vh] p-12 rounded-lg bg-[#04AEB7] flex flex-col xl:flex-row items-center justify-center text-center xl:justify-between">
+        <div className="w-11/12 xl:w-3/4 self-center h-auto gap-y-8 p-12 rounded-lg bg-[#04AEB7] flex flex-col xl:flex-row items-center justify-center text-center xl:justify-between">
           <h2 className="w-full xl:w-1/3 font-bold text-white text-[25px] xl:text-[30px] xl:text-start">
             The best Data Table
           </h2>
@@ -38,7 +38,7 @@ export default function Home() {
             <ButtonLink route="/tables" title="Go to Tables"></ButtonLink>
           </div>
         </div>
-        <div className="w-11/12 xl:w-3/4 self-center h-64 xl:h-[20vh] gap-y-8  rounded-lg p-8 flex flex-col items-center justify-center">
+        <div className="w-11/12 xl:w-3/4 self-center h-64 xl:h-[20vh] gap-y-12  rounded-lg p-8 flex flex-col items-center justify-center">
           <p className="h-1/4 w-full text-center font-bold text-[30px] xl:text-[40px]">
             Trusted by:
           </p>

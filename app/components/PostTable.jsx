@@ -36,20 +36,24 @@ export default function PostTable() {
         <TableHeader>
           <TableRow>
             {data.length !== 0 &&
-              Object.keys(data[0]).map((header, index) => (
-                <TableHead key={index}>{header}</TableHead>
-              ))}
+              Object.keys(data[0])
+                .slice(0, 3)
+                .map((header, index) => (
+                  <TableHead key={index}>{header}</TableHead>
+                ))}
           </TableRow>
         </TableHeader>
         <TableBody>
           {data.length !== 0 ? (
             data.map((values, index) => (
               <TableRow key={index}>
-                {Object.keys(data[0]).map((dat, vindex) => (
-                  <TableCell key={vindex} className="font-medium">
-                    {values[dat]}
-                  </TableCell>
-                ))}
+                {Object.keys(data[0])
+                  .slice(0, 3)
+                  .map((dat, vindex) => (
+                    <TableCell key={vindex} className="font-medium">
+                      {values[dat]}
+                    </TableCell>
+                  ))}
               </TableRow>
             ))
           ) : (
