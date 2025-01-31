@@ -9,21 +9,21 @@ export default function AnimatedSection() {
   const data = [
     {
       color: "bg-[#04AEB7]",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet erat eleifend, venenatis enim dictum, tristique eros.",
+      text: "Proin pharetra, felis et volutpat posuere, nisi sem aliquam risus, in egestas arcu diam nec lacus. Donec gravida tortor at arcu sagittis pharetra.",
       title: "Camaleonic Dashboard",
       letterColor: "text-white",
       img: "/image2.png",
     },
     {
       color: "bg-[#D498EA]",
-      text: "Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      text: "Proin pharetra, felis et volutpat posuere, nisi sem aliquam risus, in egestas arcu diam nec lacus. Donec gravida tortor at arcu sagittis pharetra.",
       title: "Awesome Tools",
       letterColor: "text-black",
       img: "/image3.png",
     },
     {
       color: "bg-[#FFFFFF]",
-      text: "In aliquet pretium ante in mattis. Vivamus in sapien et ex vulputate viverra. Nulla lacinia eget lorem sit amet viverra.",
+      text: "Proin pharetra, felis et volutpat posuere, nisi sem aliquam risus, in egestas arcu diam nec lacus. Donec gravida tortor at arcu sagittis pharetra.",
       title: "Great design",
       letterColor: "text-black",
       img: "/image4.png",
