@@ -9,7 +9,7 @@ export default function Home() {
       <main className="flex flex-col gap-y-4 p-4 row-start-2 items-center justify-center  w-full h-full">
         <AnimatedSection></AnimatedSection>
         <div className="w-11/12 md:w-3/4 self-center h-auto md:h-[15vh] mt-12 p-12 rounded-lg bg-[#04AEB7] gap-y-8 text-center flex flex-col md:flex-row items-center justify-between">
-          <h2 className="w-full md:w-1/3 font-bold text-white text-[25px] md:text-[30px]">
+          <h2 className="w-full md:w-1/3 font-bold text-white text-[25px] md:text-[30px] text-start">
             The best Dashboard
           </h2>
           <div className="w-full md:w-1/3 flex flex-col text-start justify-center text-white">
@@ -24,7 +24,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-11/12 md:w-3/4 self-center h-auto gap-y-8 md:h-[15vh] p-12 rounded-lg bg-[#04AEB7] flex flex-col md:flex-row items-center justify-center text-center md:justify-between">
-          <h2 className="w-full md:w-1/3 font-bold text-white text-[25px] md:text-[30px]">
+          <h2 className="w-full md:w-1/3 font-bold text-white text-[25px] md:text-[30px] text-start">
             The best Data Table
           </h2>
           <div className="w-full md:w-1/3 flex flex-col text-start self-center justify-items-center text-white">
@@ -46,7 +46,7 @@ export default function Home() {
             <AnimatedLogos></AnimatedLogos>
           </div>
         </div>
-        <div className="w-full lg:h-[75vh] md:h-[75vh] h-[60vh] p-4 bg-[#1C2639] text-center items-center justify-center flex flex-col gap-y-4">
+        <div className="w-full lg:h-[75vh] md:h-[75vh] h-auto p-4 bg-[#1C2639] text-center items-center justify-center flex flex-col gap-y-4">
           <h2 className="font-bold text-[30px] md:text-[40px]">
             Play around with the most advanced Dashboard Tool
           </h2>

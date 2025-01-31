@@ -47,7 +47,7 @@ export default function AnimatedSection() {
 
   return (
     <div
-      className={`w-11/12 md:w-3/4 self-center h-[60vh] md:h-[32vh] rounded-lg flex flex-col  items-center justify-items-center justify-between ${data[index].color}`}
+      className={`w-11/12 md:w-3/4 self-center h-auto md:h-[32vh] rounded-lg flex flex-col  items-center justify-items-center justify-between ${data[index].color}`}
     >
       <div
         className={`w-11/12 md:w-3/4 self-center h-[60vh] md:h-[32vh] rounded-lg flex flex-col md:flex-row items-center justify-items-center justify-between ${data[index].color}`}
