@@ -8,7 +8,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table";
+} from "@/app/components/ui/table";
 import { useEffect, useState } from "react";
 import TableFilter from "./TableFilter";
 import DialogPost from "./DialogPost";
